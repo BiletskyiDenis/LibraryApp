@@ -21,6 +21,6 @@
         public decimal Price { get; set; }
 
         public string Frequency { get; set; }
-        public int NumberOfCopies { get; set; }
+        public int NumbersOfCopies { get; set; }
     }
 }

@@ -20,15 +20,8 @@ using System.Net.Http.Headers;
 
 namespace LibraryWebApi.Controllers
 {
-    public class AssetController : ApiController
+    public class AssetController : BaseApiController
     {
-        private readonly ILibraryService assets;
-
-        public AssetController()
-        {
-            this.assets = new LibraryService(new LibraryContext("name=LibraryDB"));
-        }
-
         [Route("api/RecentlyAdded/{type}")]
         [HttpPost]
         public IEnumerable<DtoRecentlyAdded> RecentlyAdded(string type)

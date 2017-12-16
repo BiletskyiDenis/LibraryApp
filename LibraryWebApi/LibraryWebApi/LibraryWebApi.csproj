@@ -184,9 +184,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AssetController.cs" />
+    <Compile Include="Controllers\BaseApiController.cs" />
     <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\BrochureController.cs" />
-    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JournalController.cs" />
     <Compile Include="Extentions\DtoHelpers.cs" />

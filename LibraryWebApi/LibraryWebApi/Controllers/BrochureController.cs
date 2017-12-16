@@ -12,14 +12,8 @@ using System.Threading.Tasks;
 using System.Web.Http;
 namespace LibraryWebApi.Controllers
 {
-    public class BrochureController : ApiController
+    public class BrochureController : BaseApiController
     {
-        private readonly ILibraryService assets;
-
-        public BrochureController()
-        {
-            this.assets = new LibraryService(new LibraryContext("name=LibraryDB"));
-        }
         // GET: api/Broshore
         public IEnumerable<DtoBrochure> Get()
         {

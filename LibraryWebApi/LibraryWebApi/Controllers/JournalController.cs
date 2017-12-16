@@ -13,14 +13,8 @@ using System.Web.Http;
 
 namespace LibraryWebApi.Controllers
 {
-    public class JournalController : ApiController
+    public class JournalController : BaseApiController
     {
-        private readonly ILibraryService assets;
-
-        public JournalController()
-        {
-            this.assets = new LibraryService(new LibraryContext("name=LibraryDB"));
-        }
         
         // GET: api/Journal
         public IEnumerable<DtoJournal> Get()

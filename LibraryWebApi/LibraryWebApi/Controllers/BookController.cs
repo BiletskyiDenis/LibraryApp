@@ -19,15 +19,8 @@ using LibraryWebApi.Models;
 
 namespace LibraryWebApi.Controllers
 {
-    public class BookController : ApiController
+    public class BookController : BaseApiController
     {
-        private readonly ILibraryService assets;
-
-        public BookController()
-        {
-            this.assets = new LibraryService(new LibraryContext("name=LibraryDB"));
-        }
-
         // GET: api/Book
         public IEnumerable<DtoBook> Get()
         {
